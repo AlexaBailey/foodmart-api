@@ -39,7 +39,8 @@ const upload = multer({
 app.use(express.json());
 var corsOptions = {
   origin: "*",
-  credentials:true,
+  credential:true,
+  methods: ["GET", "POST", "PUT", "DELETE"]
 };
 app.use(cors(corsOptions))
 
