@@ -45,9 +45,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const db = mysql.createConnection({
   user: "root",
-  host: "localhost",
-  password: "alexa",
-  database: "foodstore",
+  host: "roundhouse.proxy.rlwy.net",
+  password: "xmhpcQrrKztqAOgcVjYentziQIQFbIOs",
+  database: "railway",
   multipleStatements: true,
 }); 
 
