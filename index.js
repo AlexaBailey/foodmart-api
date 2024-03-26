@@ -8,7 +8,7 @@ const bcrypt = require("bcrypt");
 const saltRounds = 10;
 const jwt = require("jsonwebtoken");
 const app = express();
-const dotenv = require("dotenv").config();
+
 
 const multer = require("multer");
 
