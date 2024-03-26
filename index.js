@@ -37,8 +37,8 @@ const upload = multer({
   }),
 });
 app.use(express.json());
-var corsOptions = {
-  origin: "*",
+let corsOptions = {
+  origin: "https://foodmart-project-production-91c8.up.railway.app",
   credential:true,
   methods: ["GET", "POST", "PUT", "DELETE"]
 };
