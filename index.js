@@ -44,14 +44,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 const db = mysql.createConnection({
-  user: process.env["ROOT "],
-  host:process.env["DB_HOST "],
-  password: process.env["DB_PASSWORD "],
-  database:process.env["DB_NAME "],
+  user: process.env.ROOT,
+  host:process.env.DB_HOST,
+  password: process.env.DB_PASSWORD,
+  database:process.env.DB_NAME,
   port:process.env.PORT,
   multipleStatements: true,
 }); 
-
+db.connect(err => console.log(err));
 app.post("/signup", (req, res) => {
   const username = req.body.nickname;
   const password = req.body.password;
