@@ -493,6 +493,6 @@ app.post("/disliked/:id/:userid", (req, res, next) => {
   });
 });
 
-app.listen(8800, () => {
+app.listen(process.env.PORTI,"0.0.0.0",  () => {
   console.log("running server");
 });
