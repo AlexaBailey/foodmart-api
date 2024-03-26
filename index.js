@@ -51,7 +51,7 @@ const db = mysql.createConnection({
   port:process.env.PORT,
   multipleStatements: true,
 }); 
-db.connect(err => console.log(err));
+db.connect(err => console.log(err.message));
 app.post("/signup", (req, res) => {
   const username = req.body.nickname;
   const password = req.body.password;
