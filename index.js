@@ -60,7 +60,7 @@ const db = mysql.createConnection({
   host:process.env.DB_HOST,
   password: process.env.DB_PASSWORD,
   database:process.env.DB_NAME,
-  port:process.env.PORT,
+  port:process.env.DB_PORT,
   multipleStatements: true,
 });
 db.connect((error) => {
@@ -493,6 +493,6 @@ app.post("/disliked/:id/:userid", (req, res, next) => {
   });
 });
 
-app.listen(process.env.PORTI,"0.0.0.0",  () => {
+app.listen(process.env.PORT,"0.0.0.0",  () => {
   console.log("running server");
 });
