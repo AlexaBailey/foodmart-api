@@ -47,7 +47,7 @@ const db = mysql.createConnection({
   user: process.env["ROOT "],
   host:process.env["DB_HOST "],
   password: process.env["DB_PASSWORD "],
-  database:process.env["DB_Name "],
+  database:process.env["DB_NAME "],
   multipleStatements: true,
 }); 
 
