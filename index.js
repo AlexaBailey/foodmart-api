@@ -44,10 +44,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 const db = mysql.createConnection({
-  user: "root",
-  host: "roundhouse.proxy.rlwy.net",
-  password: "xmhpcQrrKztqAOgcVjYentziQIQFbIOs",
-  database: "railway",
+  user: process.env["ROOT "],
+  host:process.env["DB_HOST "],
+  password: process.env["DB_PASSWORD "],
+  database:process.env["DB_Name "],
   multipleStatements: true,
 }); 
 
